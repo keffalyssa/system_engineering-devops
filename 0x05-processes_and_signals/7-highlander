@@ -1,6 +1,13 @@
-git add 0x05-processes_and_signals/7-highlander
-git commit -m "Fix 7-highlander script to handle SIGTERM properly"
-git push
+#!/usr/bin/env bash
+
+trap "echo 'I am invincible!!!'" SIGTERM
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
+
 
 
 
