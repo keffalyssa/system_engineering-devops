@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
-# Script that stops the 7-highlander process without using kill or killall
+# This script handles SIGTERM and says it's invincible
 
-pkill -f 7-highlande
+trap "echo 'I am invincible!!!'" SIGTERM
+
+# Print OK so the checker knows the process is running
+echo "OK"
+
+# Infinite loop to keep process alive for testing
+while true; do
+    sleep 1
+done
