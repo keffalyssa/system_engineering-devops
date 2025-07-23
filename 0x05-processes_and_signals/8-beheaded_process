@@ -1,6 +1,4 @@
-cat > 8-beheaded_process << 'EOF'
 #!/usr/bin/env bash
-# A Bash script that kills the 7-highlander process using SIGKILL
+# This script finds and forcefully kills the 7-highlander process using SIGKILL
 
-pkill -9 -f "7-highlander"
-EOFr
+pkill -9 -f 7-highlander
